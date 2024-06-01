@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to make tea</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.js" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>How to make tea</h1>
+        <img
+          src="https://imageio.forbes.com/specials-images/imageserve/5f6c061ca71799093f55fd02/Aromatic-herbal-tea-/0x0.jpg?format=jpg&crop=5029,3354,x0,y0,safe&width=1440"
+          alt="A cup of tea"
+        />
+        <p>
+          At the very least, tea is flavourful way of getting enough fluid into
+          your body each day. On top of that, studies have shown teas can help
+          protect your teeth and your heart.
+        </p>
+      </header>
+      <section
+        id="ingredients"
+        onmouseover="ingredientsHover()"
+        onmouseout="ingredientsNormal()"
+      >
+        <h2>Ingredients <i class="fa fa-coffee" aria-hidden="true"></i></h2>
+        <ul>
+          <li>Tea Bag</li>
+          <li>Water</li>
+          <li>Milk - Dairy/Plant - based (Optional)</li>
+          <li>Sugar/Honey (Optional)</li>
+        </ul>
+      </section>
+      <section
+        id="preparation"
+        onmouseover="preparationHover()"
+        onmouseout="preparationNormal()"
+      >
+        <h2>
+          Preparation <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+        </h2>
+        <ol>
+          <li>
+            Run the tap a little so the water's niceley aereted, and only boil
+            it once to keep the oxygen level up. Oxygen in water helps flavour!
+          </li>
+          <li>Pop a tea bag into your mug (<em>always</em> a big mug)</li>
+          <li>Pour the hot water over the tea bag and stir briefly.</li>
+          <li>
+            Tea needs to unlock all its flavour, so give it 3-4 minutes to do
+            its thing. This id perfect time to grab a sneaky cookie or daydream
+            about vacation.
+          </li>
+          <li>
+            Before removing the tea bag, gently squish it with a spoon agains
+            the side of the mug. Not to much or you'll make it bitter.
+          </li>
+          <li>
+            If you want, throe in some milk or sugar or honey or nothin at all.
+          </li>
+          <li>Enjoy!</li>
+        </ol>
+      </section>
+      <footer><p>Copyright Me 2020</p></footer>
+    </div>
+    <script>
+      function ingredientsHover() {
+        document.getElementById(
+          "ingredients"
+        ).firstElementChild.firstElementChild.style.fontSize = "300%";
+      }
+
+      function ingredientsNormal() {
+        document.getElementById(
+          "ingredients"
+        ).firstElementChild.firstElementChild.style.fontSize = "100%";
+      }
+
+      function preparationHover() {
+        document.getElementById(
+          "preparation"
+        ).firstElementChild.firstElementChild.style.fontSize = "300%";
+      }
+
+      function preparationNormal() {
+        document.getElementById(
+          "preparation"
+        ).firstElementChild.firstElementChild.style.fontSize = "100%";
+      }
+    </script>
+  </body>
+</html>
